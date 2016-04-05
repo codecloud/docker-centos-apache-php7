@@ -16,6 +16,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
     php70-php-json.x86_64 \
     php70-php-mbstring.x86_64 \
     php70-php-mcrypt.x86_64 \
+    php70-php-mysqlnd.x86_64 \
     php70-php-pdo.x86_64 \
     php70-php-pear.noarch \
     php70-php-xml.x86_64 \
