@@ -21,6 +21,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
     php70-php-xml.x86_64 \
     php70-php-ast.x86_64 \
     php70-php-opcache.x86_64 \
+    php70-php-pecl-zip.x86_64 \
     php70-php-pecl-memcached.x86_64 && \
     ln -s /usr/bin/php70 /usr/bin/php && \
     ln -s /etc/opt/remi/php70/php.ini /etc/php.ini && \
@@ -29,7 +30,7 @@ RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.n
     ln -s /etc/opt/remi/php70/pear /etc/pear
 
 
-RUN yum install -y httpd-devel.x86_64 nano wget memcached
+RUN yum install -y httpd-devel.x86_64 nano wget memcached git unzip
 
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer
 
