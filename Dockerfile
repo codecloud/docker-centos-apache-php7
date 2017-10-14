@@ -2,7 +2,7 @@ FROM centos:latest
 
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
     yum install -y http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
-    yum install yum-utils && \
+    yum install -y yum-utils && \
     yum-config-manager --enable remi-php70 && \
     yum update -y && \
     yum install -y \
